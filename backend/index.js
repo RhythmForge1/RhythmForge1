@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: "https://rhythm-forge-api.vercel.app/", // Allow requests from your frontend
+    origin: "https://rhythmforge1.onrender.com/", // Allow requests from your frontend
     methods: ["GET", "POST", "PATCH", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })

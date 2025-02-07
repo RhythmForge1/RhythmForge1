@@ -19,7 +19,7 @@ const VendorProjects = () => {
   useEffect(() => {
     const fetchProjectCodes = async () => {
       try {
-        const response = await axios.get("https://rhythm-forge-api.vercel.app/api/projects");
+        const response = await axios.get("https://rhythmforge1.onrender.com/api/projects");
         setProjectCodes(response.data.map((project) => project.projectCode));
       } catch (error) {
         console.error("Error fetching project codes:", error);
@@ -33,7 +33,7 @@ const VendorProjects = () => {
     if (selectedProject) {
       const fetchStageData = async () => {
         try {
-          const response = await axios.get(`https://rhythm-forge-api.vercel.app/api/projects/${selectedProject}`);
+          const response = await axios.get(`https://rhythmforge1.onrender.com/api/projects/${selectedProject}`);
           const stages = response.data.stages.map((stage) => ({
             ...stage,
             selectedAction: stage.selectedAction || "Actions", // Default value
@@ -86,7 +86,7 @@ console.log("Extracted Token:", token);
       }
       // Make the API call to update the stage status
       const response = await axios.patch(
-        `https://rhythm-forge-api.vercel.app/api/projects/${selectedProject}/stages/${stage.stage}`,
+        `https://rhythmforge1.onrender.com/api/projects/${selectedProject}/stages/${stage.stage}`,
         { status: "In-Progress" },
         {
           headers: {
@@ -155,7 +155,7 @@ console.log("Extracted Token:", token);
   
       // API call to update the stage status
       const response = await axios.patch(
-        `https://rhythm-forge-api.vercel.app/api/projects/${selectedProject}/stages/${stageData[currentStageIndex]?.stage}`,
+        `https://rhythmforge1.onrender.com/api/projects/${selectedProject}/stages/${stageData[currentStageIndex]?.stage}`,
         rejectionPayload,
         {
           headers: {

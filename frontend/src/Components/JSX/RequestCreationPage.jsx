@@ -58,7 +58,7 @@ const RequestCreationPage = () => {
       console.log("Extracted Token:", token);
 
     try {
-        const response = await fetch('https://rhythm-forge-api.vercel.app/api/projects/create', {
+        const response = await fetch('https://rhythmforge1.onrender.com/api/projects/create', {
             method: 'POST',
             headers: {
                 Authorization: `${token}`,

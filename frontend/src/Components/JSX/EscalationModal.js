@@ -16,7 +16,7 @@ const EscalationModal = ({ isOpen, onClose }) => {
 
     const fetchEscalations = async () => {
         try {
-            const response = await axios.get("https://rhythm-forge-api.vercel.app/api/escalations");
+            const response = await axios.get("https://rhythmforge1.onrender.com/api/escalations");
             setEscalations(response.data);
         } catch (error) {
             console.error("Error fetching escalations:", error);

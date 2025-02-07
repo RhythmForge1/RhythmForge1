@@ -30,7 +30,7 @@ const MilestoneModal = ({ isOpen, closeModal }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://rhythm-forge-api.vercel.app/api/milestones/create", milestoneData);
+      const response = await axios.post("https://rhythmforge1.onrender.com/api/milestones/create", milestoneData);
       if (response.status === 201) {
         alert("Milestone created successfully!");
         closeModal(); // Close the modal after successful submission

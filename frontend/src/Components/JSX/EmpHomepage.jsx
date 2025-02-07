@@ -69,7 +69,7 @@ const EmpHomepage = () => {
 
   try {
     // Fetch user details from the backend
-    const response = await axios.get(`https://rhythm-forge-api.vercel.app/api/users/profile`, {
+    const response = await axios.get(`https://rhythmforge1.onrender.com/api/users/profile`, {
       headers: { Authorization: `${token}` },
     });
 
@@ -147,7 +147,7 @@ const EmpHomepage = () => {
    useEffect(() => {
     if (projectCode) {
       axios
-        .get(`https://rhythm-forge-api.vercel.app/api/deliverables/${projectCode}`)
+        .get(`https://rhythmforge1.onrender.com/api/deliverables/${projectCode}`)
         .then((response) => {
           const data = response.data.deliverables;
   
@@ -203,7 +203,7 @@ const EmpHomepage = () => {
 const token = userDetails?.jwtToken; // Extract JWT token
     axios
     .patch(
-      `https://rhythm-forge-api.vercel.app/api/projects/${projectCode}/stages/${newStage}`,
+      `https://rhythmforge1.onrender.com/api/projects/${projectCode}/stages/${newStage}`,
       { status: "In Progress" },
       {
         method: "PATCH",
@@ -274,7 +274,7 @@ const updateStatus = async (newStatus) => {
  // If milestoneId is assigned, proceed to complete the milestone
  if (milestoneId) {
   const response = await axios.patch(
-    `https://rhythm-forge-api.vercel.app/api/milestones/${milestoneId}/complete`,
+    `https://rhythmforge1.onrender.com/api/milestones/${milestoneId}/complete`,
     { userId: userId, milestoneId, timelyCompletionsCount: newTimelyCount, rewardPoints, newLevel },
     { headers: { Authorization: `${token}` } }
   );
@@ -295,7 +295,7 @@ const updateStatus = async (newStatus) => {
 }
     // Proceed to update the project stage status
     await axios.patch(
-      `https://rhythm-forge-api.vercel.app/api/projects/${projectCode}/stages/${currentStage}`,
+      `https://rhythmforge1.onrender.com/api/projects/${projectCode}/stages/${currentStage}`,
       { status: newStatus },
       { headers: { Authorization: `${token}` } }
     );
@@ -315,7 +315,7 @@ const fetchLatestProjectData = async () => {
     const token = JSON.parse(localStorage.getItem("userDetails"))?.jwtToken;
     
     // Fetch latest project data (including current stage and milestones)
-    const response = await axios.get(`https://rhythm-forge-api.vercel.app/api/projects/${projectCode}`, {
+    const response = await axios.get(`https://rhythmforge1.onrender.com/api/projects/${projectCode}`, {
       headers: { Authorization: `${token}` }
     });
 
@@ -334,7 +334,7 @@ const updateStageDates = () => {
   console.log("Sending data:", { startDate, endDate });
   axios
     .patch(
-      `https://rhythm-forge-api.vercel.app/api/projects/${projectCode}/stages/${currentStage}/dates`,
+      `https://rhythmforge1.onrender.com/api/projects/${projectCode}/stages/${currentStage}/dates`,
       { startDate, endDate },
       {
         headers: {
@@ -356,7 +356,7 @@ useEffect(() => {
         try {
           const userDetails = JSON.parse(localStorage.getItem("userDetails"));
           const token = userDetails ? userDetails.jwtToken : null;
-          const response = await fetch(`https://rhythm-forge-api.vercel.app/api/projects/${projectCode}`, {
+          const response = await fetch(`https://rhythmforge1.onrender.com/api/projects/${projectCode}`, {
             method: "GET",
             headers: {
               Authorization: `Bearer ${token}`,
@@ -450,7 +450,7 @@ useEffect(() => {
   const [deliverables, setDeliverables] = useState([]);
 
   useEffect(() => {
-    fetch("https://rhythm-forge-api.vercel.app/api/deliverables")
+    fetch("https://rhythmforge1.onrender.com/api/deliverables")
       .then((res) => res.json())
       .then((data) => {
         if (data.deliverables) {

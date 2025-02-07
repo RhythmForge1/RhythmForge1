@@ -77,7 +77,7 @@ const VendorHomepage = () => {
     // Fetch project codes on component mount
     const fetchProjectCodes = async () => {
       try {
-        const response = await fetch('https://rhythm-forge-api.vercel.app/api/projects');
+        const response = await fetch('https://rhythmforge1.onrender.com/api/projects');
         const data = await response.json();
         // Extract projectCode values from the response
         if (Array.isArray(data)) {
@@ -202,7 +202,7 @@ useEffect(() => {
     try {
       const userDetails = JSON.parse(localStorage.getItem("userDetails"));
       const token = userDetails ? userDetails.jwtToken : null;
-      const response = await fetch(`https://rhythm-forge-api.vercel.app/api/projects/${projectCode}`, {
+      const response = await fetch(`https://rhythmforge1.onrender.com/api/projects/${projectCode}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

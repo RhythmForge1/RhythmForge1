@@ -20,7 +20,7 @@ useEffect(() => {
   // Fetch project codes on component mount
   const fetchProjectCodes = async () => {
     try {
-      const response = await fetch('https://rhythm-forge-api.vercel.app/api/projects');
+      const response = await fetch('https://rhythmforge1.onrender.com/api/projects');
       const data = await response.json();
       // Extract projectCode values from the response
       if (Array.isArray(data)) {
@@ -48,7 +48,7 @@ const handleChange = (e) => {
       return handleError('All fields are required.');
     }
     try {
-  const response = await fetch('https://rhythm-forge-api.vercel.app/auth/login', {
+  const response = await fetch('https://rhythmforge1.onrender.com/auth/login', {
           method: "POST",
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, password, userType, projectCode }),

@@ -7,7 +7,7 @@ const ProjectCalendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date().toISOString().split("T")[0]);
 
   useEffect(() => {
-    fetch("https://rhythm-forge-api.vercel.app/api/projects")
+    fetch("https://rhythmforge1.onrender.com/api/projects")
       .then((res) => res.json())
       .then((data) => {
         const dates = [];

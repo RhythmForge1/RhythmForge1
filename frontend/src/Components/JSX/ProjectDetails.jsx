@@ -12,7 +12,7 @@ const ProjectDetails = ({ projectCode }) => {
       try {
         const userDetails = JSON.parse(localStorage.getItem("userDetails"));
         const token = userDetails ? userDetails.jwtToken : null;
-        const response = await axios.get(`https://rhythm-forge-api.vercel.app/api/projects/${projectCode}`, {
+        const response = await axios.get(`https://rhythmforge1.onrender.com/api/projects/${projectCode}`, {
           headers: {
             Authorization: `${token}`, 
           },
