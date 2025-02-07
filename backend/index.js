@@ -52,7 +52,7 @@ app.use("/api/attachments", attachmentRoutes)
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://rhythm-forge-api.vercel.app/", // Adjust this to match your frontend's origin
+    origin: "https://rhythmforge1.onrender.com/", // Adjust this to match your frontend's origin
     methods: ["GET", "POST"],
   },
 });
