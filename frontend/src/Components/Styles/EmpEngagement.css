@@ -1,0 +1,300 @@
+.emp-engagement-page {
+    /* padding: 20px; */
+    font-family: Arial, sans-serif;
+    /* margin-left: 5px; */
+  }
+  .emp-engagement-main {
+    margin-top: 80px; /* Ensure it starts after the navbar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .headerHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #002b5c;
+    color: white;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .logo-header {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon-button1 {
+    color: white;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .icon-button1:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  } 
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .search-bar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .icons .icon {
+    margin-left: 10px;
+  }
+  
+  /* Dropdown Section */
+  .dropdown-section-eng {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    top: 75px;
+    position: relative;
+    padding: 15px;
+  }
+
+  
+  .left-dropdowns-eng, .right-dropdowns-eng {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .dropdown-eng {
+    margin-bottom: 15px;
+    
+  }
+  
+  .dropdown-eng label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+  }
+  
+  .dropdown-eng select {
+    width: 200px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
+  }
+
+  .search-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+  }
+  
+  .search-field {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  
+  .search-field input {
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
+    margin-bottom: 10px;
+  }
+  
+  .search-results {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    visibility: inherit;
+  }
+  
+  .search-results li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .search-results li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Line Graph Section */
+  .line-graph-section-eng {
+    margin-bottom: 40px;
+    padding: 25px;
+    margin-left: 0px;
+    width: 1400px;
+    border: none;
+    background: #cccccc24;
+  }
+  
+  .chart-container-eng {
+    display: flex;
+    align-items: center;
+    height: 350px; /* Ensure the container supports the 200px height */
+  }
+  
+  .chart-container-eng canvas {
+    height: 350px !important; /* Force the canvas to respect the height */
+  }
+  
+  
+  .summary-box-eng {
+    /* margin-left: 10px; */
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d5d7d881;
+    box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
+  }
+  
+  .summary-box-eng h4 {
+    margin-bottom: 10px;
+  }
+  .summary-box-eng p {
+    margin: 5px;
+  }
+  
+  .gauge-container {
+    width: 150px;
+    height: 90px;
+  }
+  .value-text{
+    color: black !important;
+  }
+
+  /* Project Values and Personal Growth Sections */
+
+  
+  .step-symbol-eng {
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 15px 40px 15px 20px; /* Add space on the right for the arrow */
+    background-color: #003e85;
+    color: white;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 12% 50%, 0% 0%);
+    transition: background-color 0.3s;
+    width: 300px;
+    height: 120px;
+    justify-content: center;
+  }
+  
+  .step-symbol-eng:hover {
+    background-color: #011c3b;
+    color: #ccc;
+  }
+  
+  .pie-charts-container-eng {
+    display: flex;
+    justify-content: space-around;
+    height: 280px;
+    /* background: #f0f0f0; */
+    align-items: center;
+    
+  }
+
+  .pie-charts-container canvas {
+    height: 200px !important; /* Force the canvas to respect the height */
+    width: 220px !important;
+  }
+  
+  .pie-box-eng b{
+    font-size: 14px;       /* Reduce the font size of labels */
+    margin-bottom: 3px;   /* Add spacing between the label and the pie chart */
+    white-space: nowrap;   /* Prevent the label from breaking into multiple lines */
+    overflow: hidden;      /* Hide any overflow text */
+    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+    color: #0F5FDC;
+  }
+
+  
+  .line-graph-section-eng b{
+    color: #0F5FDC;
+    font-size: 20px;   
+  }
+  
+  .pie-box-eng {
+    text-align: center;
+    padding: 15px;
+    /* background-color: #e6f7ff; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 220px;          /* Fixed width for consistency */
+    height: 245px;         /* Ensure a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pie-box-eng:hover{
+    background-color: #e6f7ff;
+    transform: scale(1.1);
+  }
+
+  
+  .personal-growth-section-eng{
+    height: 220px;
+    position: relative;
+    top: 25px;
+  }
+  .footereng{
+    position: relative;
+    top: 220px;
+    padding: 5px;
+    background-color: #002b5c;
+    color: #ccc;
+    width: 100%;
+  }
+  .footereng h3{
+    background-color: #002b5c;
+    color: #ccc;
+  }
+  .add-milestone{
+    background-color: #d5d7d881;
+    box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
+    border-radius: 7px;
+  }

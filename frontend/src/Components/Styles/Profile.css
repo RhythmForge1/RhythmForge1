@@ -1,0 +1,192 @@
+/* Profile Page Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+    top: 70px;
+}
+
+/* Profile Info */
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: #f9f9f9;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+.profile-info p:hover {
+    background: #ececec;
+}
+/* Dropdown Account */
+.dropdown-account {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-account-content {
+    position: absolute;
+    top: 130%;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-account-content button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-account-content button:hover {
+    background-color: #f1f1f1;
+}
+
+
+.rewards{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+
+/* Badges */
+.badges-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.badge {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: jump 1.5s ease-in-out infinite alternate;
+}
+
+/* Level Badge */
+.level-badge {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Jump Animation */
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+
+/* Vouchers Section */
+.Voucher-prevbox, .Voucher-currentbox {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Voucher-prevbox ul, .Voucher-currentbox ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Voucher-prevbox li, .Voucher-currentbox li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Loading Placeholder */
+.loading-placeholder {
+    width: 80px;
+    height: 80px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .badges-container {
+        padding-left: 0;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    .header1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right {
+        flex-direction: column;
+    }
+}

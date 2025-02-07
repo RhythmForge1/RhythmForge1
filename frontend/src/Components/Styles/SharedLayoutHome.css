@@ -1,0 +1,157 @@
+.layout-home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header-home {
+    background-color: #00274d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .main-home {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .left-box-home,
+  .right-box-home {
+    max-width: 250px;
+    flex: 0 0 250px;
+    padding: 1rem;
+    border: 1px solid #201c1c;
+    border-radius: 8px;
+  }
+  
+  .body-home {
+    flex: 1;
+    margin: 0 1rem;
+  }
+  
+  .footer-home {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(81, 82, 83, 0.3); /* Add shadow to the bottom of the header */
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-header {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 5px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: gray;
+  }
+  
+  .header-right {
+    display: flex; /* Ensure the buttons are aligned side by side */
+    align-items: center; /* Vertically center the buttons */
+  }
+  
+  .icon-button {
+    background: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.1s, color 0.3s;
+  }
+  
+  .icon-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .icon-button i {
+    margin-right: 8px; /* Add spacing between icon and text */
+  }
+  
+  .header-right .icon-button:first-child {
+    margin-left: 0; /* Remove left margin for the first button */
+  }
+
+  
+  .navbar-home {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #222020;
+    color: rgb(61, 58, 58);
+  }
+  
+  .navbar-home ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-home ul li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .navbar-home ul li:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #252424;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    color: #ddd;
+  }
+  
+  .content-area {
+    padding: 20px;
+  }
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+  }
+  
+  

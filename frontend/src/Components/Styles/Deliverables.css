@@ -1,0 +1,159 @@
+/* General Container */
+.deliverables-container {
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Page Title */
+  .page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .deliverables-main{
+    margin-top: 130px; /* Ensure it starts after the navbar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Optional: Add padding */
+  }
+  
+  /* Table Styles */
+  .deliverables-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .deliverables-table th,
+  .deliverables-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .deliverables-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .deliverables-table td.completed {
+    color: green;
+  }
+  
+  .deliverables-table td.pending {
+    color: orange;
+  }
+  
+  /* Loading Spinner */
+  .loading-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-container h6 {
+    margin-top: 10px;
+  }
+  
+  /* Error Message */
+  .error-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ececee;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 220px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+  }
+  
+  .filters input:focus {
+    border-color: #5c6bc0; /* Modern blue color */
+    box-shadow: 0 0 10px rgba(92, 107, 192, 0.3);
+  }
+  
+  .filters input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .filters input:hover {
+    border-color: #3f51b5; /* Darker blue on hover */
+  }
+  
+  .filters input:disabled {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+  }
+  
+  .filters .filter-label {
+    font-weight: 500;
+    margin-right: 10px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .filters .filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .filters .filter-container label {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .filters .filter-container input {
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filters input {
+      width: 100%;
+    }
+  }
+  

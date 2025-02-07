@@ -1,0 +1,194 @@
+/* EmployeesPage.css */
+
+/* General Layout */
+.Emp-main {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Styles */
+  .Emp-form {
+    max-width: 600px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Emp-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .Emp-form input,
+  .Emp-form select,
+  .Emp-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .Emp-form button {
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .Emp-form button:hover {
+    background: #45a049;
+  }
+  
+  /* Table Styles */
+  .Emp-table-container {
+    margin: 20px auto;
+    max-width: 95%;
+    overflow-x: auto;
+  }
+  
+  .Emp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .Emp-table th,
+  .Emp-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .Emp-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .Emp-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .Emp-table td button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Emp-table td button:hover {
+    background-color: #007bb5;
+  }
+  
+  /* Assign Form Styles */
+  .Emp-assign-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Emp-assign-form select {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Emp-assign-form button {
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .Emp-assign-form button:hover {
+    background: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Emp-table th, 
+    .Emp-table td {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  
+    .Emp-form, .Emp-assign-form {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2, h3 {
+      font-size: 1.2rem;
+    }
+  
+    .Emp-form input,
+    .Emp-form select,
+    .Emp-assign-form select {
+      font-size: 0.9rem;
+    }
+  
+    .Emp-table th, 
+    .Emp-table td {
+      font-size: 0.8rem;
+    }
+  }
+  
+.Emp-main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 0; 
+    box-sizing: border-box; 
+    margin-top: 80px;
+    position: relative;
+    top: 70px;
+}  
+.Emp-main-form{
+    display: flex;
+    justify-content: center;
+    gap:100px;
+}
+.Emp-form-info{
+    width: 320px;
+    background-color: #00a9b575;
+    max-height: 110px;
+    margin-top: 100px;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.Emp-form{
+  max-width: 600px;
+
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enables vertical scrolling */
+  max-height: 80vh; /* Limit the height to 80% of viewport */
+}

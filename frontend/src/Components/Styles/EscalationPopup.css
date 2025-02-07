@@ -1,0 +1,142 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Ensure popup is above other elements like the header */
+    
+  }
+  
+  a.Escalation{
+    color: rgb(0, 0, 0);
+  }
+
+  .popup-container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    z-index: 1200; /* Ensure popup container is above the overlay */
+  }
+  
+  .close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #555; /* Neutral color for better visibility */
+    transition: color 0.3s ease;
+  }
+  
+  .close-popup-btn:hover {
+    color: #000; /* Darker on hover for better UX */
+  }
+  
+  .escalation-form label,
+  .preview-container p {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 14px;
+    color: #333; /* Ensure readability */
+  }
+  
+  textarea,
+  input,
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px; /* Add spacing between buttons */
+  }
+  
+  .submit-btn,
+  .confirm-btn {
+    background: #28a745;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover,
+  .confirm-btn:hover {
+    background: #218838; /* Darker green on hover */
+  }
+  
+  .edit-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .edit-btn:hover {
+    background: #e0a800; /* Slightly darker yellow on hover */
+  }
+  
+  .cancel-btn {
+    background: #dc3545;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-btn:hover {
+    background: #c82333; /* Darker red on hover */
+  }
+  
+  @media (max-width: 768px) {
+    /* Responsive adjustments */
+    .popup-container {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+ .popup-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-Color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-Content: center;
+    align-Items: center;
+ }
+
+  
+  .popup-content2{
+    background-Color: white;
+    padding: 20px;
+    border-Radius: 8px;
+    max-Width: 600px;
+    width: 100%;
+  }
+
+  .popup-content2.p{
+    color: #000;
+  }

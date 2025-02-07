@@ -1,0 +1,4 @@
+1- re map all in emp home page
+2. implement discussion tab with socket io
+3. implement attachments handling feature
+4. deploy on vercel dry run today final run tomrw morning

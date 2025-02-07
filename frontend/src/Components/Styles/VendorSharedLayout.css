@@ -1,0 +1,249 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #bbb; */
+  } 
+  
+  .headerHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #002b5c;
+    color: white;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .logo-header {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon-button1 {
+    color: white;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .icon-button1:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  } 
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .search-bar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .icons .icon {
+    margin-left: 10px;
+  }
+  
+ /* Navbar Section */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    gap: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 70px; /* Adjust this based on the header height */
+    width: 100%;
+    z-index: 999;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dropdown Wrapper */
+  .dropdown-Vshared {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+  }
+  
+  .dropdown-Vshared:hover {
+    color: #0056ff; /* Highlight color for hover */
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-content-Vshared {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 140px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+    margin-top: 6px; /* Space between dropdown and parent */
+    overflow: hidden;
+    left: 0; /* Align the dropdown content to the left */
+    text-align: left;
+  }
+  
+  .dropdown-Vshared:hover .dropdown-content-Vshared {
+    display: block;
+  }
+  
+  /* Dropdown Items */
+  .dropdown-content-Vshared a {
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dropdown-content-Vshared a:hover {
+    background-color: #f2f2f5; /* Light gray hover background */
+    color: #0056ff; /* Text highlight on hover */
+  }
+  
+  /* Right-Aligned Dropdown */
+  .right-dropdown {
+    margin-left: auto;
+  }
+  .navbar-Vhome, .navbar-Vhome a {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: #000000;
+    padding: 3px;
+    background-color: #f2f2f5;
+    border-radius: 5px;
+  }
+  .navbar-Vhome a:hover {
+    background-color: #f2f2f5;
+    color: #0056ff;
+    border-radius: 5px;
+   
+  }
+  /* Popup Overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Popup Container */
+  .popup-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  /* Close Button for Popup */
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333333;
+    transition: color 0.3s;
+  }
+  
+  .close-popup:hover {
+    color: #ff0000;
+  }
+  
+  /* Buttons inside Popup */
+  .submit-btn, .cancel-btn, .confirm-btn, .edit-btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submit-btn {
+    background-color: #0056ff;
+    color: #ffffff;
+  }
+  
+  .cancel-btn {
+    background-color: #f2f2f5;
+    color: #333333;
+  }
+  
+  .confirm-btn {
+    background-color: #28a745;
+    color: #ffffff;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: #ffffff;
+  }
+  
+  .submit-btn:hover {
+    background-color: #003bb3;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #1e7a34;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e0a800;
+  }
