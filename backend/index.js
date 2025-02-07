@@ -19,7 +19,7 @@ const Message = require("./models/messageModel")
 const attachmentRoutes = require("./routes/attachmentRoute")
 
 require('dotenv').config();
-require('./Models/db');
+require('./models/db');
 const PORT = process.env.PORT || 8080;
 
 app.use(
