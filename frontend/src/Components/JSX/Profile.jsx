@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "../Styles/Profile.css"; // Ensure the correct path to the CSS file
+import "../Styles/Profile.css";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -25,7 +25,6 @@ const Profile = () => {
           headers: { Authorization: `${token}` },
         });
 
-        // Check the full response and map data to state
         console.log(response.data); // Log the API response to check the structure
 
         setUser(response.data.user || {});
@@ -33,7 +32,7 @@ const Profile = () => {
         setCurrentCycleVoucher(response.data.user?.currentCycleVoucher || null); // Ensure currentCycleVoucher is set
       } catch (err) {
         console.error("Error fetching profile:", err);
-        setUser({}); // Set an empty object on error
+        setUser({}); 
       } finally {
         setLoading(false);
       }

@@ -42,7 +42,7 @@
     align-items: center;
     background-color: white;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(81, 82, 83, 0.3); /* Add shadow to the bottom of the header */
+    box-shadow: 0 2px 5px rgba(81, 82, 83, 0.3); 
   }
   
   .header-left {
@@ -69,8 +69,8 @@
   }
   
   .header-right {
-    display: flex; /* Ensure the buttons are aligned side by side */
-    align-items: center; /* Vertically center the buttons */
+    display: flex; 
+    align-items: center; 
   }
   
   .icon-button {
@@ -85,16 +85,16 @@
   }
   
   .icon-button:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    color: #007bff; /* Change color on hover */
+    transform: scale(1.1); 
+    color: #007bff; 
   }
   
   .icon-button i {
-    margin-right: 8px; /* Add spacing between icon and text */
+    margin-right: 8px; 
   }
   
   .header-right .icon-button:first-child {
-    margin-left: 0; /* Remove left margin for the first button */
+    margin-left: 0; 
   }
 
   

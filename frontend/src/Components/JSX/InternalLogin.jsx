@@ -72,7 +72,6 @@ useEffect(() => {
         localStorage.setItem("userDetails", JSON.stringify(userDetails));
         setCurrentUser(userDetails);
         console.log("Stored userId:", localStorage.getItem("userId"));
-        // Redirect based on the `redirectPage` from the backend
         if (result.redirectPage === 'EmpHomepage') {
           navigate('/EmpHomepage');
         } else {

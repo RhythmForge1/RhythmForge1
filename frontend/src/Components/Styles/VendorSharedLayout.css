@@ -85,7 +85,7 @@ body {
     gap: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
-    top: 70px; /* Adjust this based on the header height */
+    top: 70px; 
     width: 100%;
     z-index: 999;
     font-family: Arial, sans-serif;
@@ -102,7 +102,7 @@ body {
   }
   
   .dropdown-Vshared:hover {
-    color: #0056ff; /* Highlight color for hover */
+    color: #0056ff; 
   }
   
   /* Dropdown Menu */
@@ -114,9 +114,9 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     border-radius: 5px;
-    margin-top: 6px; /* Space between dropdown and parent */
+    margin-top: 6px; 
     overflow: hidden;
-    left: 0; /* Align the dropdown content to the left */
+    left: 0; 
     text-align: left;
   }
   
@@ -135,8 +135,8 @@ body {
   }
   
   .dropdown-content-Vshared a:hover {
-    background-color: #f2f2f5; /* Light gray hover background */
-    color: #0056ff; /* Text highlight on hover */
+    background-color: #f2f2f5; 
+    color: #0056ff; 
   }
   
   /* Right-Aligned Dropdown */

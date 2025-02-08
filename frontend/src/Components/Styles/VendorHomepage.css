@@ -87,7 +87,7 @@ body {
   padding-left: 10px;
   box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
   position: fixed; 
-  top: 70px; /* Adjust this to the height of your header */ 
+  top: 70px; 
   width: 100%; 
   z-index: 999;
 }
@@ -105,9 +105,9 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     border-radius: 5px;
-    margin-top: 6px; /* Space between dropdown and parent */
+    margin-top: 6px; 
     overflow: hidden;
-    left: 0; /* Align the dropdown content to the left */
+    left: 0;
   }
   
 
@@ -170,7 +170,7 @@ body {
 }
 
 .middle-section {
-  flex: 2; /* Middle section takes more space */
+  flex: 2; 
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -345,15 +345,15 @@ canvas {
 }
 
 .status-line .completed {
-  background-color: #0366d6; /* Dark Blue for completed */
+  background-color: #0366d6; 
 }
 
 .status-line .in-progress {
-  background-color: #6cb2eb; /* Light Blue for in-progress */
+  background-color: #6cb2eb; 
 }
 
 .status-line .upcoming {
-  background-color: #ccc; /* Grey for upcoming */
+  background-color: #ccc; 
 }
 
 /* Stage Labels */
@@ -389,7 +389,7 @@ canvas {
 }
 
 /* Attachments Section */
-/* Attachments Section */
+
 .toggle-attachments {
   cursor: pointer;
   color: #090a0a;
@@ -850,7 +850,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3); /* Overlay background */
+  background: rgba(0, 0, 0, 0.3); 
   z-index: 1000;
 }
 

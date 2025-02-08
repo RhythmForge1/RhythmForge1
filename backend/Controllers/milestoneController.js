@@ -25,10 +25,10 @@ exports.createMilestone = async (req, res) => {
       
         // Create a new milestone with the correct fields
         const milestone = new Milestone({
-            title,          // Match with the schema field name
-            description,    // Match with the schema field name
-            criteria,       // Match with the schema field name
-            targetValue,    // Match with the schema field name
+            title,   
+            description,   
+            criteria,      
+            targetValue,   
             rewardPoints,
             badge,
             levelUp,
@@ -84,8 +84,8 @@ exports.completeMilestone = async (req, res) => {
             user: updatedUser,
             awardedMilestone: milestoneId,
             timelyCompletionsCount: updatedUser.timelyCompletionsCount,
-            badges: updatedUser.badges || [], // Include badges in the response
-            currentCycleVoucher: updatedUser.currentCycleVoucher || "In Progress" // Show progress until voucher is generated
+            badges: updatedUser.badges || [], 
+            currentCycleVoucher: updatedUser.currentCycleVoucher || "In Progress" 
         };
 
         console.log("Milestones Completed Count:", updatedUser.milestonesCompleted.length);

@@ -189,6 +189,6 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow-y: auto; /* Enables vertical scrolling */
-  max-height: 80vh; /* Limit the height to 80% of viewport */
+  overflow-y: auto; 
+  max-height: 80vh; 
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/Deliverables.css"; // Import the external CSS file
+import "../Styles/Deliverables.css"; 
 import Internalsharedlayout from "./Internalsharedlayout";
 
 const Deliverables = () => {

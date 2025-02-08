@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #002b5c;
-  padding: 1rem 2rem; /* Use rem units for more scalability */
+  padding: 1rem 2rem; 
   box-shadow: 0 2px 5px rgba(81, 82, 83, 0.3);
 }
 
@@ -30,8 +30,8 @@ body {
 }
 
 .logo-header {
-  height: 3rem; /* Adjusted size with rem */
-  margin-right: 1rem; /* Adjusted spacing */
+  height: 3rem; 
+  margin-right: 1rem; 
 }
 
 .company-name {
@@ -40,8 +40,8 @@ body {
 }
 
 .search-bar {
-  width: 100%; /* Allow search bar to scale with available space */
-  max-width: 20rem; /* Set a max width to prevent it from growing too large */
+  width: 100%; 
+  max-width: 20rem; 
   padding: 0.5rem;
   border-radius: 1.25rem;
   border: 1px solid gray;
@@ -56,7 +56,7 @@ body {
   background: none;
   color: #fff;
   border: none;
-  margin-left: 1rem; /* Adjust margin for spacing */
+  margin-left: 1rem; 
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -99,7 +99,7 @@ body {
 
 @media (max-width: 768px) {
   .header {
-      flex-direction: column; /* Stack header items on smaller screens */
+      flex-direction: column; 
       padding: 1rem;
   }
 
@@ -124,17 +124,17 @@ body {
   }
 
   .icon-button {
-      margin-left: 0.5rem; /* Reduce space between icons */
+      margin-left: 0.5rem; 
   }
 }
 
 @media (max-width: 480px) {
   .company-name {
-      font-size: 1rem; /* Adjust font size for very small screens */
+      font-size: 1rem;
   }
 
   .search-bar {
-      max-width: 14rem; /* Limit search bar width */
+      max-width: 14rem; 
   }
 
   .icon-button {
@@ -146,7 +146,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: calc(100vh - 140px); /* Adjust for header and footer height */
+    height: calc(100vh - 140px); 
     padding: 20px;
     gap: 60px;
     flex-wrap: wrap;
@@ -538,7 +538,7 @@ body {
     
   /* Ensure consistent box layout with scrollable content */
 .register-box {
-    max-height: 420px; /* Adjust height as needed */
+    max-height: 420px; 
     overflow-y: auto;
     padding: 20px;
     background-color: #ffffff;
@@ -546,7 +546,7 @@ body {
     border-radius: 8px;
     margin: 20px;
     position: relative;
-    z-index: 1; /* Ensure it doesn't overlap */
+    z-index: 1; 
   }
 
  /* Base login box styling */
@@ -554,28 +554,28 @@ body {
   flex: 2;
   background-color: #fff;
   padding: 20px;
-  border: 1px solid #ddd; /* Lightened border */
-  border-radius: 12px; /* Rounded corners for a modern look */
+  border: 1px solid #ddd; 
+  border-radius: 12px; 
   text-align: center;
   max-height: 420px;
-  max-width: 380px; /* Keeps max width */
+  max-width: 380px;
   margin-top: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern feel */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
   z-index: 1;
   position: relative;
-  overflow: hidden; /* Ensures the content doesn't overflow */
-  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+  overflow: hidden; 
+  transition: box-shadow 0.3s ease-in-out; 
 }
 
 /* Hover effect to add a slight depth */
 .login-box:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .login-box {
-    max-width: 320px; /* Smaller max-width on mobile */
+    max-width: 320px; 
     margin-top: 20px;
     padding: 15px;
   }
@@ -583,7 +583,7 @@ body {
 
 @media (max-width: 480px) {
   .login-box {
-    max-width: 280px; /* Further reduce size for very small screens */
+    max-width: 280px; 
     margin-top: 15px;
     padding: 10px;
   }
@@ -595,27 +595,27 @@ body {
 }
 
 .login-box::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color of the scrollbar handle */
+  background-color: #888; 
   border-radius: 4px;
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  transition: background-color 0.3s ease; 
 }
 
 .login-box::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Color on hover */
+  background-color: #555; 
 }
 
 .login-box::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Background of the scrollbar track */
+  background-color: #f1f1f1; 
   border-radius: 4px;
 }
 
-/* Typography styling for a modern look */
+
 .login-box h2 {
   font-size: 24px;
-  color: #333; /* Darker text for better readability */
+  color: #333; 
   margin-bottom: 20px;
   font-weight: 600;
-  text-transform: uppercase; /* For a sharp look */
+  text-transform: uppercase; 
 }
 
 .login-box input {
@@ -629,7 +629,7 @@ body {
 }
 
 .login-box input:focus {
-  border-color: #5c6bc0; /* Focus effect with a blue border */
+  border-color: #5c6bc0; 
   outline: none;
 }
 
@@ -637,7 +637,7 @@ body {
   width: 100%;
   padding: 12px;
   margin-top: 10px;
-  background-color: #5c6bc0; /* Modern blue color */
+  background-color: #5c6bc0; 
   border: none;
   border-radius: 8px;
   color: white;
@@ -647,7 +647,7 @@ body {
 }
 
 .login-box button:hover {
-  background-color: #3f4a9a; /* Darken on hover */
+  background-color: #3f4a9a; 
 }
 .register-link {
   font-style: italic;
@@ -659,24 +659,24 @@ body {
 }
 /* General Footer Styles */
 .site-footer {
-  background-color: #002b5c; /* Navy blue background */
-  color: #ffffff; /* White text */
+  background-color: #002b5c; 
+  color: #ffffff; 
   padding: 30px 15px;
   font-size: 14px;
 }
 
-/* Flexbox for Horizontal Layout */
+
 .page-width {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px; /* Adjusts space between sections */
+  gap: 20px; 
 }
 
 .site-footer__section {
-  flex: 1; /* Makes the sections flexible */
-  margin: 10px; /* Spacing between sections */
+  flex: 1; 
+  margin: 10px;
   text-align: center;
 }
 
@@ -685,7 +685,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Subsections (Our Services, Conditions of Use) */
+
 .site-footer__subsection ul {
   list-style: none;
   padding: 0;
@@ -706,10 +706,10 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Design for Small Screens */
+
 @media (max-width: 768px) {
   .page-width {
-    flex-direction: column; /* Stack the sections vertically on small screens */
+    flex-direction: column; 
     align-items: center;
   }
 
@@ -734,9 +734,9 @@ body {
   color: #ffffff;
   text-decoration: underline;
 }
-/* Be in the Know Section */
+
 .site-footer__section .contact-form {
-  background-color: #003366; /* Slightly darker blue background */
+  background-color: #003366; 
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -766,7 +766,7 @@ body {
 
 .site-footer__section .input-group__btn button {
   padding: 10px 20px;
-  background-color: #f9a825; /* Yellow background for subscribe button */
+  background-color: #f9a825; 
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -775,7 +775,7 @@ body {
 }
 
 .site-footer__section .input-group__btn button:hover {
-  background-color: #f57f17; /* Darker yellow on hover */
+  background-color: #f57f17; 
 }
 
 /* Styling for "Be in the Know" title */
@@ -784,26 +784,24 @@ body {
   color: #fff;
   margin-bottom: 15px;
 }
-/* General styling for input fields */
-/* General styling for input fields */
-/* General styling for input fields */
+
 .form-input {
-  width: 100%; /* Make inputs responsive */
-  max-width: 400px; /* Set a max width */
-  padding: 10px; /* Add padding */
-  margin: 8px 0; /* Add spacing */
-  box-sizing: border-box; /* Prevent padding from affecting width */
-  font-size: 16px; /* Consistent font size */
-  border: 1px solid #ccc; /* Border styling */
-  border-radius: 4px; /* Rounded corners */
+  width: 100%; 
+  max-width: 400px;
+  padding: 10px; 
+  margin: 8px 0; 
+  box-sizing: border-box; 
+  font-size: 16px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
 }
 
 /* Checkbox container styling */
 .terms-container {
-  display: flex; /* Align checkbox and label horizontally */
-  align-items: center; /* Vertically align */
-  width: fit-content; /* Fit the content only */
-  margin: 8px auto; /* Center it and add spacing */
+  display: flex; 
+  align-items: center;
+  width: fit-content; 
+  margin: 8px auto; 
 }
 
 /* Reduced checkbox size */
@@ -815,20 +813,20 @@ body {
 
 /* Styling the label */
 .terms-label {
-  font-size: 14px; /* Adjust font size */
-  color: #333; /* Neutral text color */
-  margin: 0; /* Remove default margins */
-  line-height: 1; /* Ensure text alignment with checkbox */
+  font-size: 14px; 
+  color: #333; 
+  margin: 0; 
+  line-height: 1; 
 }
 
 /* Hyperlink styling inside label */
 .terms-label a {
-  color: #007bff; /* Link color */
-  text-decoration: none; /* No underline */
+  color: #007bff; 
+  text-decoration: none; 
 }
 
 .terms-label a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
 
 .input-container {

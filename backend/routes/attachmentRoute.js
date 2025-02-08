@@ -6,7 +6,7 @@ const Attachment = require("../models/attachmentModel");
 
 const router = express.Router();
 
-// Set up multer storage
+// multer storage for handling attachments
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadPath = path.join(__dirname, "../uploads");

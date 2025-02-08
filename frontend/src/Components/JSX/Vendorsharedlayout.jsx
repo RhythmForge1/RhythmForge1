@@ -81,10 +81,10 @@ const Vendorsharedlayout = () => {
             const formDetails = {
                 projectId: formData.projectId,
                 reason: formData.reason,
-                expectedTimeslot: formData.timeslot, // Matching backend field
+                expectedTimeslot: formData.timeslot, 
                 severity: formData.severity,
-                usersAffected: Number(formData.usersAffected), // Ensure number format
-                attachments: formData.attachments ? [formData.attachments.name] : [], // Handle attachments properly
+                usersAffected: Number(formData.usersAffected), 
+                attachments: formData.attachments ? [formData.attachments.name] : [], 
             };
     
             await axios.post("https://rhythmforge1.onrender.com/api/escalation", formDetails, {

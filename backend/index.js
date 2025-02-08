@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: "https://rhythmforge1.onrender.com/", // Allow requests from your frontend
+    origin: "https://rhythmforge1.onrender.com/", 
     methods: ["GET", "POST", "PATCH", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -52,7 +52,7 @@ app.use("/api/attachments", attachmentRoutes)
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://rhythmforge1-1.onrender.com", // Adjust this to match your frontend's origin
+    origin: "https://rhythmforge1-1.onrender.com", 
     methods: ["GET", "POST"],
   },
 });
@@ -66,13 +66,13 @@ io.on("connection", (socket) => {
     console.log("Message received:", data);
 
     try {
-      // Check if the message already exists in the database (using the timestamp or message content)
+  
       const existingMessage = await Message.findOne({ timestamp: data.timestamp });
 
       if (existingMessage) {
         console.warn("Duplicate message detected, not saving.");
         callback && callback({ status: "error", message: "Message already sent" });
-        return;  // Do not store or emit the message if it already exists
+        return; 
       }
 
       // Store message in the database

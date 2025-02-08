@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1050; /* Ensure popup is above other elements like the header */
+    z-index: 1050; 
     
   }
   
@@ -25,7 +25,7 @@
     margin-top: 80px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     position: relative;
-    z-index: 1200; /* Ensure popup container is above the overlay */
+    z-index: 1200; 
   }
   
   .close-popup-btn {
@@ -36,12 +36,12 @@
     border: none;
     background: none;
     cursor: pointer;
-    color: #555; /* Neutral color for better visibility */
+    color: #555; 
     transition: color 0.3s ease;
   }
   
   .close-popup-btn:hover {
-    color: #000; /* Darker on hover for better UX */
+    color: #000; 
   }
   
   .escalation-form label,
@@ -49,7 +49,7 @@
     margin-bottom: 15px;
     display: block;
     font-size: 14px;
-    color: #333; /* Ensure readability */
+    color: #333; 
   }
   
   textarea,
@@ -69,7 +69,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
-    margin-top: 10px; /* Add spacing between buttons */
+    margin-top: 10px; 
   }
   
   .submit-btn,
@@ -81,7 +81,7 @@
   
   .submit-btn:hover,
   .confirm-btn:hover {
-    background: #218838; /* Darker green on hover */
+    background: #218838; 
   }
   
   .edit-btn {
@@ -90,7 +90,7 @@
   }
   
   .edit-btn:hover {
-    background: #e0a800; /* Slightly darker yellow on hover */
+    background: #e0a800; 
   }
   
   .cancel-btn {
@@ -101,7 +101,7 @@
   }
   
   .cancel-btn:hover {
-    background: #c82333; /* Darker red on hover */
+    background: #c82333; 
   }
   
   @media (max-width: 768px) {

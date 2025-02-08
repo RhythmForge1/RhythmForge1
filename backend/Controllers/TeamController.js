@@ -5,7 +5,6 @@ exports.addTeam = async (req, res) => {
   try {
     const { name, projectCode, size, projectsInProgress, projectsClosed, valueAdds, escalations } = req.body;
 
-    // Check if team already exists
     const existingTeam = await Team.findOne({ name });
     if (existingTeam) {
       return res.status(400).json({ message: 'Team with this name already exists' });

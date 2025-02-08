@@ -55,10 +55,10 @@ const EscalationModal = ({ isOpen, onClose }) => {
             paddingBottom: "10px",
         },
         tableContainer: {
-            flex: 1, // Takes up available space
-            overflowY: "auto", // Enables scrolling if content overflows
+            flex: 1, 
+            overflowY: "auto", 
             marginTop: "10px",
-            maxHeight: "45vh", // Restricts table height for proper scrolling
+            maxHeight: "45vh", 
         },
         table: {
             width: "100%",

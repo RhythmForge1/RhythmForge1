@@ -102,11 +102,10 @@ const EmpEngagement = () => {
    const fetchMembers = async () => {
     try {
       const response = await axios.get("https://rhythmforge1.onrender.com/api/users");
-      console.log("Members Response:", response.data); // Log the response
+      console.log("Members Response:", response.data);
   
-      // Ensure the response is an array (check for 'users' array)
       if (Array.isArray(response.data.users)) {
-        setMembers(response.data.users);  // Set the fetched users to the state
+        setMembers(response.data.users); 
       } else {
         console.error("Error: Response data is not an array", response.data);
         setMembers([]);  // Default to an empty array if the response is not an array
@@ -218,7 +217,7 @@ const EmpEngagement = () => {
         ))
       ) : (
         <tr>
-          <td colSpan="7">No members available</td> {/* Updated colspan to match the number of columns */}
+          <td colSpan="7">No members available</td> 
         </tr>
       )}
     </tbody>

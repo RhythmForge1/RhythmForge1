@@ -144,10 +144,10 @@ const InternalHomepage = () => {
     // Fetch backlog projects (where all stages are pending)
     const fetchBacklogData  = async () => {
       try {
-        const projectsResponse = await fetch('https://rhythmforge1.onrender.com/api/projects'); // Replace with the actual projects API endpoint
+        const projectsResponse = await fetch('https://rhythmforge1.onrender.com/api/projects');
         const projectsData = await projectsResponse.json();
   
-        const teamsResponse = await fetch('https://rhythmforge1.onrender.com/api/get-teams'); // Replace with the actual teams API endpoint
+        const teamsResponse = await fetch('https://rhythmforge1.onrender.com/api/get-teams');
         const teamsData = await teamsResponse.json();
   
         // Filter projects where all stages are pending
@@ -182,7 +182,7 @@ const InternalHomepage = () => {
     e.preventDefault();
     try {
       const response = await axios.post("https://rhythmforge1.onrender.com/api/add-team", formData);
-      setTeams([...teams, response.data.team].slice(0, 5)); // Add the new team and limit to 3
+      setTeams([...teams, response.data.team].slice(0, 5)); //set for limit of 5 teams
       setFormData({
         name: "",
         projectCode: [],
@@ -328,7 +328,7 @@ const handleAttachmentDelete = async (category) => {
  useEffect(() => {
   fetch("https://rhythmforge1.onrender.com/api/attachments")
     .then((response) => response.json())
-    .then((data) => setAttachments(data || [])) // Ensuring it is always an array
+    .then((data) => setAttachments(data || [])) 
     .catch((error) => console.error("Error fetching attachments:", error));
 }, []);
 
@@ -339,15 +339,15 @@ const handleAttachmentPopup = (project) => {
     .then((response) => response.json())
     .then((data) => {
       if (Array.isArray(data)) {
-        setAttachments(data); // Ensure data is an array before setting state
+        setAttachments(data); 
       } else {
         console.error("Unexpected data format:", data);
-        setAttachments([]); // Set empty array to prevent undefined issues
+        setAttachments([]); 
       }
     })
     .catch((error) => {
       console.error("Error fetching attachments:", error);
-      setAttachments([]); // Prevent undefined state
+      setAttachments([]); 
     });
 
   setIsPopupOpen(true);

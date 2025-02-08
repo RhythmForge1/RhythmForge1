@@ -29,18 +29,17 @@ const EmployeesPage = () => {
     const fetchTeamsAndProjects = async () => {
       try {
         const [teamsResponse, projectsResponse] = await Promise.all([
-          axios.get("https://rhythmforge1.onrender.com/api/get-teams"), // Adjust endpoint
-          axios.get("https://rhythmforge1.onrender.com/api/projects"), // Adjust endpoint
+          axios.get("https://rhythmforge1.onrender.com/api/get-teams"), 
+          axios.get("https://rhythmforge1.onrender.com/api/projects"), 
         ]);
         console.log("Projects Response:", projectsResponse.data);
 
-        // Map projects to extract relevant fields for the dropdown
         const projectsData = projectsResponse.data.map((project) => ({
           _id: project._id, 
           projectCode: project.projectCode
         }));
-        setTeamsList(teamsResponse.data); // Example response: [{_id: "1", name: "HCL Dev"}]
-        setProjectsList(projectsResponse.data); // Example response: [{_id: "2", name: "SAND"}]
+        setTeamsList(teamsResponse.data); 
+        setProjectsList(projectsResponse.data); 
       } catch (error) {
         console.error("Error fetching teams/projects:", error);
       }
@@ -66,7 +65,6 @@ const EmployeesPage = () => {
       const response = await axios.get("https://rhythmforge1.onrender.com/api/users");
       console.log("Members Response:", response.data); // Log the response
   
-      // Ensure the response is an array (check for 'users' array)
       if (Array.isArray(response.data.users)) {
         setMembers(response.data.users);  // Set the fetched users to the state
       } else {
@@ -114,7 +112,7 @@ const handleCreateUser = async (e) => {
     lineManagerEmail: formData.lineManagerEmail,
     sapId: formData.sapId,
     businessJustification: formData.businessJustification,
-    accessType: formData.accessType,  // Ensure this line is correct
+    accessType: formData.accessType,  
     projectCode: formData.projectCode,
     password: formData.password,
   };
@@ -196,7 +194,7 @@ const handleCreateUser = async (e) => {
   // Assign teams/projects to member
   const handleAssignTeamsProjects = async (userId) => {
     try {
-      // Map the selected team and project IDs using the correct logic
+  
       const mappedTeams = assignData.team.map(
         (teamId) => teamsList.find((team) => team._id === teamId)?._id
       );
@@ -369,14 +367,12 @@ const handleCreateUser = async (e) => {
         ))
       ) : (
         <tr>
-          <td colSpan="7">No members available</td> {/* Updated colspan to match the number of columns */}
+          <td colSpan="7">No members available</td> 
         </tr>
       )}
     </tbody>
   </table>
 </div>
-
-      {/* Assign Teams/Projects Form */}
 
  {/* Assign Teams/Projects Form */}
 <div className="Emp-assign-form">

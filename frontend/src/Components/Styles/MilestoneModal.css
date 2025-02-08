@@ -2,8 +2,8 @@
   background-color: #fff;
   padding: 20px;
   width: 400px;
-  max-height: 80vh; /* Set max height to prevent cropping */
-  overflow-y: auto; /* Enable scrolling if content overflows */
+  max-height: 80vh; 
+  overflow-y: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -11,7 +11,7 @@
   z-index: 1050;
 }
 
-/* Ensure the overlay keeps the modal centered */
+
 .milestone-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-/* Make form content scrollable if needed */
+
 .milestone-form {
   display: flex;
   flex-direction: column;
@@ -59,8 +59,8 @@
 .button-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px; /* Prevents buttons from being too close to form */
-  background: #fff; /* Ensures buttons are always visible */
+  padding-top: 10px; 
+  background: #fff;
   position: sticky;
   bottom: 0;
 }

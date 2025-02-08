@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Message = require("../models/chatModel");
 
-// ✅ Store message in DB and emit to all relevant users
+// Store message in DB and emit to all relevant users
 router.post("/send", async (req, res) => {
     try {
       const { sender, senderType, message } = req.body;

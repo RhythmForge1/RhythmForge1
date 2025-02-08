@@ -28,7 +28,7 @@ const projectSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  stages: [stageSchema], // Embed stages directly into the project schema
+  stages: [stageSchema], 
 
 });
 

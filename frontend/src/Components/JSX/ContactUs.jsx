@@ -20,7 +20,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can handle the form submission, like sending an email
+ 
     console.log('Form submitted:', formData);
     alert('Form submitted successfully!');
     // Reset form

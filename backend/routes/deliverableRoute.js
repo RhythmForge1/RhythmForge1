@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Project = require("../models/projectModel"); // Ensure the path is correct
+const Project = require("../models/projectModel");
 const users = require("../models/User.js");
 
 // Fetch deliverables for all projects
@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   try {
     // Retrieve all projects and populate 'members' with name, email, and _id
     const projects = await Project.find()
-      .populate("members", "name email _id")  // Ensure name is being populated
+      .populate("members", "name email _id")  
 
     console.log("Fetched projects with populated members:", projects);
 

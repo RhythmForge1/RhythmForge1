@@ -193,7 +193,7 @@ router.patch("/:projectCode/assignee", AuthMiddleware, async (req, res) => {
       return res.status(404).json({ message: "Project not found." });
     }
 
-    project.assignee = assigneeId; // Assuming an `assignee` field exists in your schema
+    project.assignee = assigneeId; 
     await project.save();
 
     res.status(200).json({ message: "Assignee updated successfully.", project });

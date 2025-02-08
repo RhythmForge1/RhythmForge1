@@ -83,8 +83,7 @@ const EmpHomepage = () => {
     console.error("Error fetching user details:", error);
   }
 };
-  
-  // Call this function after the page loads or user logs in
+
   useEffect(() => {
     fetchUserDetails();
   }, []);
@@ -104,14 +103,14 @@ const EmpHomepage = () => {
   const uploadFile = () => {
     // Simulate a successful upload
     console.log("File uploaded successfully");
-    handleDescriptionOrAttachmentChange(); // Update Modified Date
+    handleDescriptionOrAttachmentChange(); 
   };
   
   
   // On component mount, calculate delivery date (4 weeks from creation)
   React.useEffect(() => {
     const today = new Date();
-    const delivery = new Date(today.setDate(today.getDate() + 28)); // Adds 28 days
+    const delivery = new Date(today.setDate(today.getDate() + 28)); 
     setDeliveryDate(delivery.toLocaleDateString());
   }, []);
     // Update modified date when attachments or description changes
@@ -121,7 +120,7 @@ const EmpHomepage = () => {
 
     useEffect(() => {
       if (paramProjectCode) {
-        setProjectCode(paramProjectCode); // Set projectCode from URL param
+        setProjectCode(paramProjectCode); 
       } else {
         const storedUserDetails = localStorage.getItem("userDetails");
         if (storedUserDetails) {
@@ -137,7 +136,7 @@ const EmpHomepage = () => {
 //     if (storedUserDetails) {
 //       const userDetails = JSON.parse(storedUserDetails);
 //       const projectCode = userDetails.projectCode;
-//       console.log("Stored projectCode:", projectCode); // Log to confirm retrieval
+//       console.log("Stored projectCode:", projectCode); 
 //       setProjectCode(projectCode); // Set the projectCode
 //     } else {
 //       console.error('User details not found in localStorage.');
@@ -166,7 +165,6 @@ const EmpHomepage = () => {
   
           console.log("Latest Pending Stage:", latestPendingStage);
   
-        // Step 1: Map teamMembers to include both name and employeeId
         const teamMembers = latestPendingStage.teamMembers.map((member) => ({
           name: member.name,
           employeeId: member.employeeId
@@ -282,14 +280,13 @@ const updateStatus = async (newStatus) => {
 
   console.log(response.data);
 
-  // **Check if the user received a voucher**
   if (response?.data?.voucher && Object.keys(response.data.voucher).length > 0) {
     setVoucher(response.data.voucher); // Store the voucher in state
   } else {
     setVoucher(null); // Ensure the voucher is reset if not available
   }
-  // **Update the user's profile with currentCycleVoucher and previousVouchers**
-  const updatedUser = response.data.user; // Assuming the response includes the updated user data
+  // Update the user's profile with currentCycleVoucher and previousVouchers
+  const updatedUser = response.data.user; 
   setPreviousVouchers(updatedUser.previousVouchers);
   setCurrentCycleVoucher(updatedUser.currentCycleVoucher);
 }

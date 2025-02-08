@@ -41,7 +41,7 @@ const ChatWidget = () => {
     return () => {
       socket.off("receive_message"); // Cleanup socket listener on unmount
     };
-  }, [messages]);  // Re-run this effect only when the messages change
+  }, [messages]); 
 
   // Send message
   const sendMessage = async () => {

@@ -193,7 +193,7 @@ body, html {
     background: #e76f51;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .fixed-header {
         flex-direction: column;

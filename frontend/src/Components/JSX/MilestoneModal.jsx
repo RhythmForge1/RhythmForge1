@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import axios from "axios";
-import "../Styles/MilestoneModal.css"; // Import the CSS for styling
+import "../Styles/MilestoneModal.css"; 
 
 Modal.setAppElement("#root"); // Set the root element for accessibility
-
 const MilestoneModal = ({ isOpen, closeModal }) => {
   const [milestoneData, setMilestoneData] = useState({
     title: "",

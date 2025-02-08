@@ -73,7 +73,7 @@ const UserSchema = new Schema({
         discount: { type: String },
         validUntil: { type: Date }
     },
-}, { timestamps: true }); // Add timestamps for createdAt and updatedAt
+}, { timestamps: true }); 
 
 const UserModel = mongoose.model('users', UserSchema);
 module.exports = UserModel;

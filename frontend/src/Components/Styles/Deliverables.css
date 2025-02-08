@@ -13,10 +13,10 @@
   }
 
   .deliverables-main{
-    margin-top: 130px; /* Ensure it starts after the navbar */
+    margin-top: 130px; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Optional: Add padding */
+    padding: 20px; 
   }
   
   /* Table Styles */

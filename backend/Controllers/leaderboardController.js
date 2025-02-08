@@ -11,7 +11,7 @@ exports.getLeaderboard = async (req, res) => {
             .skip(skip)
             .limit(limit)
             .select("name totalPoints level badges")
-            .lean(); // Converts Mongoose documents to plain JSON
+            .lean(); 
 
         // Assign ranks based on sorted order
         leaderboard.forEach((user, index) => {

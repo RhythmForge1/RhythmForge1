@@ -39,13 +39,11 @@ const RequestCreationPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Trim any extra spaces before submitting the form
+
     if (!formData.shortDescription || formData.shortDescription.trim() === "") {
         alert("Short Description is required.");
         return;
       }
-    
-      // Trim any extra spaces before submitting the form
       const trimmedData = {
           ...formData,
           shortDescription: formData.shortDescription.trim(),
@@ -217,7 +215,7 @@ const RequestCreationPage = () => {
         </div>
           <footer className="site-footer" role="contentinfo">
               <div className="page-width">
-                {/* "Our Services" and "Conditions of Use" sections */}
+      
                 <div className="site-footer__section">
                   <div className="site-footer__subsection">
                     <h4>OUR SERVICES</h4>

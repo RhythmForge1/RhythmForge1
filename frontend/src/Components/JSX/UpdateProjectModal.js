@@ -15,20 +15,20 @@ const customStyles = {
       top: "50%",
       left: "50%",
       transform: "translate(-50%, -50%)",
-      zIndex: 1050, // Ensure it is above other elements
+      zIndex: 1050, 
     },
     overlay: {
-      backgroundColor: "rgba(0, 0, 0, 0.5)", // Dark overlay to emphasize modal
-      zIndex: 1040, // Ensure it covers the screen
+      backgroundColor: "rgba(0, 0, 0, 0.5)", 
+      zIndex: 1040, 
     },
   };
 
 const UpdateProjectModal = ({ isOpen, onClose }) => {
-  const [selectedProject, setSelectedProject] = useState(""); // Track selected project
+  const [selectedProject, setSelectedProject] = useState(""); 
   const [shortDescription, setShortDescription] = useState("");
   const [detailedDescription, setDetailedDescription] = useState("");
   const [severity, setSeverity] = useState("");
-  const [projectCodes, setProjectCodes] = useState([]); // Store project codes
+  const [projectCodes, setProjectCodes] = useState([]); 
 
   // Fetch available projects when the modal opens
   useEffect(() => {

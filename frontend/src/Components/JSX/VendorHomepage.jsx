@@ -79,7 +79,7 @@ const VendorHomepage = () => {
       try {
         const response = await fetch('https://rhythmforge1.onrender.com/api/projects');
         const data = await response.json();
-        // Extract projectCode values from the response
+
         if (Array.isArray(data)) {
           const codes = data.map((project) => project.projectCode);
           setProjectCodes(codes);
@@ -151,8 +151,8 @@ const VendorHomepage = () => {
         name: file.name,
         date: new Date().toLocaleDateString(),
       };
-      setAttachments((prev) => [...prev, newAttachment]); // Add the new attachment
-      handleDescriptionOrAttachmentChange(); // Update Modified Date
+      setAttachments((prev) => [...prev, newAttachment]); 
+      handleDescriptionOrAttachmentChange(); 
     }
   };
   const uploadFile = () => {
@@ -163,7 +163,7 @@ const VendorHomepage = () => {
   // On component mount, calculate delivery date (4 weeks from creation)
   React.useEffect(() => {
     const today = new Date();
-    const delivery = new Date(today.setDate(today.getDate() + 28)); // Adds 28 days
+    const delivery = new Date(today.setDate(today.getDate() + 28)); 
     setDeliveryDate(delivery.toLocaleDateString());
   }, []);
 
@@ -173,17 +173,17 @@ const VendorHomepage = () => {
   };
   const [activity, setActivity] = useState(null);
 
-  const loggedInUser = JSON.parse(localStorage.getItem("user")) || {}; // Retrieve logged-in user info from local storage
+  const loggedInUser = JSON.parse(localStorage.getItem("user")) || {}; 
   console.log("Stored User Details:", localStorage.getItem("userDetails"));
   const handleRecentActivityClick = () => {
-    // Simulate fetching activity data (could be from API or state)
+
     const activityData = {
       lastUpdatedBy: loggedInUser.name || 'Unknown User',
       lastUpdatedAt: new Date().toLocaleString(),
       changesMade: 'Added new product category, Updated stock levels.',
     };
 
-    // If no changes, show "Not authorized"
+ 
     if (!activityData.changesMade) {
       activityData.changesMade = 'Not authorized to view';
     }
@@ -192,7 +192,7 @@ const VendorHomepage = () => {
     setIsPopupOpen(true);
   };
   const closePopup = () => {
-    setIsPopupOpen(false); // Close the popup by updating the state
+    setIsPopupOpen(false);
   };
   // Fetch project details from API
 useEffect(() => {
@@ -211,11 +211,11 @@ useEffect(() => {
 
       if (response.ok) {
         const data = await response.json();
-        console.log("Fetched data:", data); // Log the entire response
+        console.log("Fetched data:", data); 
 
         if (data) {
           setProjectData(data);
-                      // Extract required fields
+
         setDescription(data.detailedDescription || "No description available.");
         setSprintPriority(data.severity || "Not Set");
         setCreatedDate(new Date(data.createdAt).toLocaleDateString());
@@ -235,8 +235,6 @@ useEffect(() => {
           const approvalStage = data.stages.find(stage => stage.stage === "Approval");
           setApprovalStatus(approvalStage ? approvalStage.status : "Not Available");
 
-
-          // Define the standard stage order
           const stages = [
             "Review",
             "Design",
@@ -254,7 +252,7 @@ useEffect(() => {
           // Identify the latest pending stage
           const pendingStages = projectStages.filter((stage) => stage.status === "Pending");
           const sortedPendingStages = pendingStages.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
-          const latestPendingStage = sortedPendingStages[0]; // The latest "Pending" stage
+          const latestPendingStage = sortedPendingStages[0]; 
 
           if (latestPendingStage) {
             const currentStageIndex = stages.indexOf(latestPendingStage.stage);
@@ -268,7 +266,7 @@ useEffect(() => {
 
               const completedWidth = ((completedStageIndex + 1) / totalStages) * 100;
 
-              // Calculate in-progress width (only for the latest "Pending" stage)
+              // Calculate in-progress width only for the latest Pending stage
               const inProgressWidth = 100 / totalStages;
 
               // Calculate upcoming width
@@ -287,7 +285,7 @@ useEffect(() => {
           }
         } else {
           console.error("Project data is missing in the response.");
-          console.log("Response data:", data); // Log the raw response to investigate the structure
+          console.log("Response data:", data); 
         }
       } else {
         console.error("Failed to fetch project data. Status:", response.status);

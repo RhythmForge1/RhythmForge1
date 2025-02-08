@@ -85,7 +85,7 @@ body {
     padding-left: 10px;
     box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
     position: fixed; 
-    top: 70px; /* Adjust this to the height of your header */ 
+    top: 70px; 
     width: 100%; 
     z-index: 999;
   }
@@ -130,7 +130,7 @@ body {
     padding-left: 10px;
     box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
     position: fixed; 
-    top: 111px; /* Adjust this to the height of your header */ 
+    top: 111px; 
     width: 100%; 
     z-index: 999;
   }
@@ -148,7 +148,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 3px;
-    margin-top: 0; /* Adjusted to remove gap */
+    margin-top: 0; 
     border: 1px solid black;
     
   }
@@ -246,7 +246,7 @@ body {
   }
   
   .scrollable {
-    max-height: 800px; /* Adjust as needed */
+    max-height: 800px; 
     overflow-y: auto;
     scrollbar-width: none; /* For Firefox - hide scrollbar */
     -ms-overflow-style: none; /* For Internet Explorer/Edge - hide scrollbar */
@@ -363,7 +363,7 @@ body {
   margin-bottom: 10px;
 }
 select[multiple] {
-  height: 100px; /* Adjust height to accommodate multiple selections */
+  height: 100px;
   overflow-y: auto;
 }
 .team-form select:focus {
@@ -704,7 +704,7 @@ select[multiple] {
   margin-bottom: 15px;
   background-color: #f9f9f9;
   border-radius: 5px;
-  overflow: hidden; /* Ensure hidden content does not spill */
+  overflow: hidden;
 }
 
 .project-header {
@@ -712,7 +712,7 @@ select[multiple] {
   background-color: #c4e0fe73;
   cursor: pointer;
   border-bottom: 5px solid #ccc;
-  transition: background-color 0.2s ease; /* Smooth hover effect */
+  transition: background-color 0.2s ease;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -725,12 +725,12 @@ select[multiple] {
 }
 
 .project-details {
-  max-height: 0; /* Collapsed by default */
+  max-height: 0;
   overflow: hidden;
-  padding: 0 10px; /* Remove padding when collapsed */
+  padding: 0 10px; 
   background-color: #ffffff;
   border-top: 1px solid #ccc;
-  transition: max-height 0.4s ease, padding 0.3s ease; /* Smooth expansion/collapse */
+  transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
 .project-details p {
@@ -744,8 +744,8 @@ select[multiple] {
 }
 
 .project-details.expanded {
-  max-height: 500px; /* Arbitrary large enough value to fit content */
-  padding: 10px; /* Add padding when expanded */
+  max-height: 500px; 
+  padding: 10px; 
 }
 /* Scrollbar customization */
 .in-progress-scrollable::-webkit-scrollbar {
@@ -814,12 +814,12 @@ select[multiple] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8); 
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+  animation: fadeIn 0.3s ease-in-out; 
 }
 
 .popup-content {
@@ -832,7 +832,7 @@ select[multiple] {
   overflow-y: auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   position: relative;
-  animation: scaleIn 0.2s ease-in-out; /* Scale animation for popup */
+  animation: scaleIn 0.2s ease-in-out; 
 }
 
 .popup-content h3 {

@@ -4,7 +4,7 @@
     /* margin-left: 5px; */
   }
   .emp-engagement-main {
-    margin-top: 80px; /* Ensure it starts after the navbar */
+    margin-top: 80px; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -168,11 +168,11 @@
   .chart-container-eng {
     display: flex;
     align-items: center;
-    height: 350px; /* Ensure the container supports the 200px height */
+    height: 350px; 
   }
   
   .chart-container-eng canvas {
-    height: 350px !important; /* Force the canvas to respect the height */
+    height: 350px !important; 
   }
   
   
@@ -201,15 +201,12 @@
   .value-text{
     color: black !important;
   }
-
-  /* Project Values and Personal Growth Sections */
-
   
   .step-symbol-eng {
     position: relative;
     font-size: 20px;
     margin-bottom: 20px;
-    padding: 15px 40px 15px 20px; /* Add space on the right for the arrow */
+    padding: 15px 40px 15px 20px; 
     background-color: #003e85;
     color: white;
     display: flex;
@@ -236,16 +233,16 @@
   }
 
   .pie-charts-container canvas {
-    height: 200px !important; /* Force the canvas to respect the height */
+    height: 200px !important; 
     width: 220px !important;
   }
   
   .pie-box-eng b{
-    font-size: 14px;       /* Reduce the font size of labels */
-    margin-bottom: 3px;   /* Add spacing between the label and the pie chart */
-    white-space: nowrap;   /* Prevent the label from breaking into multiple lines */
-    overflow: hidden;      /* Hide any overflow text */
-    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+    font-size: 14px;     
+    margin-bottom: 3px;  
+    white-space: nowrap;  
+    overflow: hidden;   
+    text-overflow: ellipsis;
     color: #0F5FDC;
   }
 
@@ -263,8 +260,8 @@
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    width: 220px;          /* Fixed width for consistency */
-    height: 245px;         /* Ensure a fixed height */
+    width: 220px;        
+    height: 245px;    
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -36,9 +36,9 @@ const VendorProjects = () => {
           const response = await axios.get(`https://rhythmforge1.onrender.com/api/projects/${selectedProject}`);
           const stages = response.data.stages.map((stage) => ({
             ...stage,
-            selectedAction: stage.selectedAction || "Actions", // Default value
+            selectedAction: stage.selectedAction || "Actions", 
             completed: stage.completed || false,
-            endDate: stage.endDate || "Not Available", // Handle endDate dynamically
+            endDate: stage.endDate || "Not Available", 
           }));
           setStageData(stages);
         } catch (error) {
@@ -72,7 +72,7 @@ const VendorProjects = () => {
     }
   
     try {
-      // Log the data being sent for debugging
+
       console.log("Approving stage:", {
         selectedProject,
         stage: stage.stage,
@@ -90,14 +90,13 @@ console.log("Extracted Token:", token);
         { status: "In-Progress" },
         {
           headers: {
-            Authorization: `${token}`, // Add the token to the Authorization header
+            Authorization: `${token}`, 
           },
         }
       );
   
       console.log("API Response:", response.data);
   
-      // Update the local state with the new status
       const updatedStages = [...stageData];
       updatedStages[index].status = "In-Progress";
       setStageData(updatedStages);
@@ -126,7 +125,7 @@ console.log("Extracted Token:", token);
     setPendingRejection({
       stage: stageData[currentStageIndex]?.stage,
       index: currentStageIndex,
-    }); // Save rejection details
+    });
     setRejectPopup(false); // Close the reject popup
     setSuccessPopup(true); // Show the success confirmation popup
   };
@@ -215,7 +214,7 @@ console.log("Extracted Token:", token);
                 <tr>
                   <th>STAGE</th>
                   <th>STATUS</th>
-                  <th>END DATE</th> {/* Added end date column */}
+                  <th>END DATE</th> 
                   <th>ACTIONS</th>
                 </tr>
               </thead>
@@ -224,7 +223,7 @@ console.log("Extracted Token:", token);
                   <tr key={index}>
                     <td>{stage.stage}</td>
                     <td>{stage.status}</td>
-                    <td>{stage.endDate}</td> {/* Dynamically displaying end date */}
+                    <td>{stage.endDate}</td> 
                     <td>
                       {["Review", "Approval", "UAT"].includes(stage.stage) && (
                         <button

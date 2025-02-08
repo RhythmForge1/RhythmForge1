@@ -5,20 +5,20 @@ body {
     padding: 0;
     /* background-color: #bbb; */
   }
-  /* Request form container styling */
+
   .NewRequest-container {
-    margin-top: 115px; /* Ensure it starts after the navbar */
+    margin-top: 115px; 
     background-color: #72b6ed77;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Optional: Add padding */
+    padding: 20px; 
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .NewRequest-container {
-        margin-top: 155px; /* Adjust slightly for smaller screens */
-        padding: 15px; /* Reduced padding for small screens */
+        margin-top: 155px; 
+        padding: 15px; 
     }
 }
   .request-form h2 {
@@ -89,7 +89,6 @@ body {
     opacity: 0.9;
   }
   
-/* Responsive styles */
 @media (max-width: 768px) {
   .headerHome {
     padding: 10px;
@@ -106,7 +105,7 @@ body {
   padding-left: 10px;
   box-shadow: 0 2px 5px rgba(10, 8, 8, 0.2);
   position: fixed; 
-  top: 70px; /* Adjust this to the height of your header */ 
+  top: 70px; 
   width: 100%; 
   z-index: 999;
 }

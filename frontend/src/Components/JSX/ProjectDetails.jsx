@@ -25,7 +25,7 @@ const ProjectDetails = ({ projectCode }) => {
         const modifiedDate = data.stages
           .filter(stage => stage.status === "Completed")
           .map(stage => stage.endDate)
-          .pop() || "Not modified yet"; // Get latest completed stage endDate
+          .pop() || "Not modified yet"; 
 
         setProjectData({
           description: data.detailedDescription,
